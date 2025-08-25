@@ -1,0 +1,94 @@
+[debug] [2025-08-13T07:44:47.969Z] ----------------------------------------------------------------------
+[debug] [2025-08-13T07:44:47.972Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2025-08-13T07:44:47.972Z] CLI Version:   14.11.2
+[debug] [2025-08-13T07:44:47.972Z] Platform:      win32
+[debug] [2025-08-13T07:44:47.972Z] Node Version:  v20.16.0
+[debug] [2025-08-13T07:44:47.973Z] Time:          Wed Aug 13 2025 13:14:47 GMT+0530 (India Standard Time)
+[debug] [2025-08-13T07:44:47.973Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-08-13T07:44:47.975Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2025-08-13T07:44:48.228Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-08-13T07:44:48.228Z] > authorizing via signed-in user (saheelathore@gmail.com)
+[debug] [2025-08-13T07:44:48.228Z] [iam] checking project netflixgpt-c4c51 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-08-13T07:44:48.229Z] Checked if tokens are valid: false, expires at: 1754207456797
+[debug] [2025-08-13T07:44:48.229Z] Checked if tokens are valid: false, expires at: 1754207456797
+[debug] [2025-08-13T07:44:48.229Z] > refreshing access token with scopes: []
+[debug] [2025-08-13T07:44:48.230Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-08-13T07:44:48.230Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-08-13T07:44:48.378Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2025-08-13T07:44:48.378Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-08-13T07:44:48.379Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflixgpt-c4c51:testIamPermissions [none]
+[debug] [2025-08-13T07:44:48.379Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflixgpt-c4c51:testIamPermissions x-goog-quota-user=projects/netflixgpt-c4c51
+[debug] [2025-08-13T07:44:48.379Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflixgpt-c4c51:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-08-13T07:44:48.654Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflixgpt-c4c51:testIamPermissions 401
+[debug] [2025-08-13T07:44:48.655Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflixgpt-c4c51:testIamPermissions {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"service":"cloudresourcemanager.googleapis.com","method":"google.cloudresourcemanager.v1.Projects.TestIamPermissions"}}]}}
+[debug] [2025-08-13T07:44:48.655Z] Got a 401 Unauthenticated error for a call that required authentication. Refreshing tokens.
+[debug] [2025-08-13T07:44:48.655Z] Checked if tokens are valid: false, expires at: 1754207456797
+[debug] [2025-08-13T07:44:48.655Z] Checked if tokens are valid: false, expires at: 1754207456797
+[debug] [2025-08-13T07:44:48.655Z] > refreshing access token with scopes: []
+[debug] [2025-08-13T07:44:48.655Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-08-13T07:44:48.655Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-08-13T07:44:48.766Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2025-08-13T07:44:48.766Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-08-13T07:44:48.766Z] [iam] error while checking permissions, command may fail: Request to https://cloudresourcemanager.googleapis.com/v1/projects/netflixgpt-c4c51:testIamPermissions had HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2025-08-13T07:44:48.767Z] Checked if tokens are valid: false, expires at: 1754207456797
+[debug] [2025-08-13T07:44:48.767Z] Checked if tokens are valid: false, expires at: 1754207456797
+[debug] [2025-08-13T07:44:48.767Z] > refreshing access token with scopes: []
+[debug] [2025-08-13T07:44:48.767Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-08-13T07:44:48.767Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-08-13T07:44:48.859Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2025-08-13T07:44:48.859Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2025-08-13T07:44:48.940Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2025-08-13T07:44:48.940Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-08-13T07:44:48.940Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/netflixgpt-c4c51 [none]
+[debug] [2025-08-13T07:44:49.309Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/netflixgpt-c4c51 401
+[debug] [2025-08-13T07:44:49.309Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/netflixgpt-c4c51 {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2025-08-13T07:44:49.309Z] Got a 401 Unauthenticated error for a call that required authentication. Refreshing tokens.
+[debug] [2025-08-13T07:44:49.309Z] Checked if tokens are valid: false, expires at: 1754207456797
+[debug] [2025-08-13T07:44:49.309Z] Checked if tokens are valid: false, expires at: 1754207456797
+[debug] [2025-08-13T07:44:49.309Z] > refreshing access token with scopes: []
+[debug] [2025-08-13T07:44:49.309Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-08-13T07:44:49.309Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-08-13T07:44:49.584Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2025-08-13T07:44:49.584Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-08-13T07:44:49.585Z] Request to https://firebase.googleapis.com/v1beta1/projects/netflixgpt-c4c51 had HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[error] 
+[error] Error: Assertion failed: resolving hosting target of a site with no site name or target name. This should have caused an error earlier
+[debug] [2025-08-13T07:45:14.737Z] ----------------------------------------------------------------------
+[debug] [2025-08-13T07:45:14.740Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2025-08-13T07:45:14.740Z] CLI Version:   14.11.2
+[debug] [2025-08-13T07:45:14.740Z] Platform:      win32
+[debug] [2025-08-13T07:45:14.740Z] Node Version:  v20.16.0
+[debug] [2025-08-13T07:45:14.740Z] Time:          Wed Aug 13 2025 13:15:14 GMT+0530 (India Standard Time)
+[debug] [2025-08-13T07:45:14.740Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-08-13T07:45:14.917Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-08-13T07:45:14.917Z] > authorizing via signed-in user (saheelathore@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\hp\OneDrive\Documents\Complete Web Development\React_Project\netflix
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[debug] [2025-08-13T07:57:43.301Z] ExitPromptError: User force closed the prompt with SIGINT
+    at Interface.sigint (C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\@inquirer\core\dist\commonjs\lib\create-prompt.js:101:37)
+    at Interface.emit (node:events:519:28)
+    at Interface.emit (node:domain:488:12)
+    at [_ttyWrite] [as _ttyWrite] (node:internal/readline/interface:1126:18)
+    at ReadStream.onkeypress (node:internal/readline/interface:265:20)
+    at ReadStream.emit (node:events:531:35)
+    at ReadStream.emit (node:domain:488:12)
+    at emitKeys (node:internal/readline/utils:371:14)
+    at emitKeys.next (<anonymous>)
+    at ReadStream.onData (node:internal/readline/emitKeypressEvents:64:36)
+[error] 
+[error] Error: An unexpected error has occurred.
