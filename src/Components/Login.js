@@ -68,19 +68,19 @@ const Login = () => {
     setSignInForm(!signInForm);
   };
   return (
-    <div className="flex">
+    <div className="relative">
       <Header />
-      <div className="absolute">
+      <div className="fixed">
         <img
-          className="brightness-50"
+          className="brightness-50 h-screen object-cover md:h-auto"
           src="https://assets.nflxext.com/ffe/siteui/vlv3/258d0f77-2241-4282-b613-8354a7675d1a/web/IN-en-20250721-TRIFECTA-perspective_cadc8408-df6e-4313-a05d-daa9dcac139f_large.jpg"
           alt="bg-img"
         ></img>
       </div>
-      <div className=" flex m-auto justify-center">
+      <div className="flex m-auto justify-center">
         <form
           onSubmit={(e) => e.preventDefault()}
-          className="absolute w-[480px] py-12 px-16 mt-32 justify-center bg-black bg-opacity-80 rounded-md text-white"
+          className="absolute w-[360px] md:w-[480px] py-12 px-10 md:px-16 mt-24 md:mt-32 justify-center bg-black bg-opacity-80 rounded-md text-white"
         >
           <p className="test-sm text-white pb-4 w-auto">
             ⚠️ This is a learning project built with Firebase Authentication.
