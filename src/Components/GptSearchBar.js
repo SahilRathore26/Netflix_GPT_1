@@ -4,8 +4,9 @@ import { useRef } from "react";
 import openai from "../utils/openai";
 import { API_OPTIONS } from "../utils/constants";
 import { addGptResults } from "../utils/GPTSlice";
+import getOpenAIClient from "../utils/openai";
 
-const GptSearchBar = () => {
+const GptSearchBar = ({apiKey}) => {
   const dispatch = useDispatch();
   const langKey = useSelector((store) => store.config.lang);
   const searchText = useRef(null);
@@ -28,7 +29,8 @@ const GptSearchBar = () => {
       searchText.current.value +
       "only give 5 movie names separate by commas Like: Sholay, Don, Saiyaara, Shiddat, Gadar";
 
-    const gptResults = await openai.chat.completions.create({
+    const openAI = getOpenAIClient(apiKey);
+    const gptResults = await openAI.chat.completions.create({
       model: "gpt-4o-mini", // ✅ switched from gpt-3.5-turbo
       messages: [{ role: "user", content: gptSearch }],
     });
