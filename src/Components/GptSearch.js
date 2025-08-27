@@ -8,7 +8,6 @@ const GptSearch = () => {
 
   useEffect(() => {
     const savedKey = localStorage.getItem("openai_key");
-    console.log("Saved key from localStorage:", savedKey);
     if (savedKey) {
       setApiKey(savedKey);
     }

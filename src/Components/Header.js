@@ -41,6 +41,7 @@ const Header = () => {
     signOut(auth)
       .then(() => {
         //onAuthStateChanged handle this
+        localStorage.removeItem("openai_key");
       })
       .catch((error) => {
         // An error happened.

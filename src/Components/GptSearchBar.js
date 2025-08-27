@@ -35,15 +35,12 @@ const GptSearchBar = ({apiKey}) => {
       messages: [{ role: "user", content: gptSearch }],
     });
 
-    console.log(gptResults.choices[0]?.message?.content);
-
     const gptMovies = gptResults.choices[0]?.message?.content.split(",");
 
     const promiseArray = gptMovies.map((movie) => searchMovieTMDB(movie));
     //[promise, promise, promise, promise, promise]
 
     const tmdbResults = await Promise.all(promiseArray);
-    console.log(tmdbResults);
 
     dispatch(addGptResults({movieNames: gptMovies, movieResults: tmdbResults}));
   };

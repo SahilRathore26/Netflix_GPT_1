@@ -4,7 +4,7 @@ import { faCircleInfo } from "@fortawesome/free-solid-svg-icons";
 
 const VideoTitle = ({ title, overview }) => {
   return (
-    <div className="pt-20 pl-10 md:pt-52 md:pl-14 absolute text-white bg-gradient-to-b from-black w-full aspect-video z-10">
+    <div className="pt-[72px] pl-4 md:pt-52 md:pl-14 absolute text-white bg-gradient-to-b from-black w-full aspect-video z-10">
       <h1 className="text-lg md:text-6xl font-bold my-4 md:my-8">{title}</h1>
       <p className="hidden md:inline-block w-2/6 md:py-2 text-lg">{overview}</p>
       <div className="my-0 md:my-5 ">
