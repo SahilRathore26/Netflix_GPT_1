@@ -21,7 +21,7 @@ const MovieDetail = () => {
   if (!movieInfo) return <h1 className="text-white">Loading...</h1>;
 
   return (
-    <div className="h-screen bg-neutral-900 text-white">
+    <div className="h-full bg-neutral-900 text-white">
       <div>
         <Header />
       </div>
