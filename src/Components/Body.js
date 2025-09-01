@@ -3,6 +3,7 @@ import Login from "./Login";
 import Browse from "./Browse";
 import ForgotPass from "./ForgotPass";
 import GptSearch from "./GptSearch";
+import MovieDetail from "./MovieDetail";
 
 const Body = () => {
   const appRouter = createBrowserRouter([
@@ -19,8 +20,12 @@ const Body = () => {
       element: <ForgotPass />,
     },
     {
-      path: "/GptSearch",
+      path: "/gptSearch",
       element: <GptSearch />,
+    },
+    {
+      path: "/movie/:id",
+      element: <MovieDetail />,
     },
   ]);
 

@@ -68,7 +68,7 @@ const Login = () => {
     setSignInForm(!signInForm);
   };
   return (
-    <div className="relative">
+    <div className="relative h-screen">
       <Header />
       <div className="fixed">
         <img

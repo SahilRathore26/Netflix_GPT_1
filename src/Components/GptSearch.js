@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import GptMovieSuggestions from "./GptMovieSuggestions";
 import GptSearchBar from "./GptSearchBar";
 import ApiKeyInput from "./ApiKeyInput";
+import Header from "./Header";
 
 const GptSearch = () => {
   const [apiKey, setApiKey] = useState(null);
@@ -15,6 +16,7 @@ const GptSearch = () => {
 
   return (
     <div className="w-full min-h-screen">
+      <Header />
       {!apiKey ? (
         <ApiKeyInput onSave={setApiKey} />
       ) : (
